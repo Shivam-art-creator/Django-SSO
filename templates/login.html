@@ -1,0 +1,23 @@
+<!-- myproject/templates/login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    {% load socialaccount %}
+    <h1>Login with Social Accounts</h1>
+    {% comment %} <a href="{% url 'account_login' %}?next={{ next }}">Login with Email</a>
+    <br><br>
+    <a href="{% provider_login_url 'google' %}">Login with Google</a>
+    <br>
+    <a href="{% provider_login_url 'facebook' %}">Login with Facebook</a> {% endcomment %}
+    <br>
+    <a href="{% provider_login_url 'github' %}">Login with GitHub</a>
+    <br><br>
+    <a href="{% url 'account_reset_password' %}">Forgot Password?</a>
+</body>
+</html>

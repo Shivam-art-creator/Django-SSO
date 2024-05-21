@@ -1,0 +1,8 @@
+Hello,
+
+Please click the link below to verify your email address:
+
+{{ activate_url }}
+
+Thank you,
+The Team
